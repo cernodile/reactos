@@ -10,8 +10,8 @@ LANGUAGE LANG_ESTONIAN, SUBLANG_DEFAULT
 STRINGTABLE
 BEGIN
     IDS_HELP "Kuvab või muudab failide juurdepääsu kontrollnimekirju (ACLe)\n\n\
-CACLS faili nimi      [/T] [/E] [/C] [/G kasutaja:õigus [...]] [/R kasutaja [...]]\n\
-                      [/P kasutaja:õigus [...]] [/D kasutaja [...]]\n\
+CACLS faili nimi      [/T] [/E] [/C] [/G kasutaja:õigus [...]] [/R kasutaja [..\n\
+                      .]] [/P kasutaja:õigus [...]] [/D kasutaja [...]]\n\
    faili nimi         Kuvab ACLe.\n\
    /T                 Muudab määratud failide ACLe praeguses\n\
                       kataloogides ja kõikides alakataloogides.\n\
@@ -22,7 +22,8 @@ CACLS faili nimi      [/T] [/E] [/C] [/G kasutaja:õigus [...]] [/R kasutaja [..
                                        W  Kirjutamine\n\
                                        C  Muutmine (kirjutamine)\n\
                                        F  Täielik võim\n\
-   /R kastuaja        Võtab määratud kasutaja õigused (ainult kehtiv koos /E lipuga).\n\
+   /R kastuaja        Võtab määratud kasutaja õigused (ainult kehtiv koos /E\n\
+                      lipuga).\n\
    /P kasutaja:õigus  Asendab määratud kasutaja õigused.\n\
                       Õigus võib olla: N  Ühtegi\n\
                                        R  Lugemine\n\
@@ -30,7 +31,7 @@ CACLS faili nimi      [/T] [/E] [/C] [/G kasutaja:õigus [...]] [/R kasutaja [..
                                        C  Muutmine (kirjutamine)\n\
                                        F  Täielik võim\n\
    /D kasutaja        Keela määratud kasutaja õigused.\n\
-Metamärke saab kasutada rohkem kui ühe faili täpsustamiseks käsus.\n\
+Metamärke saab kasutada rohkem kui ühe faili määramiseks käsus.\n\
 Te saate määrata rohkem kui ühte kasutajat.\n\n\
 Lühendid:\n\
    CI - Päri konteinerilt.\n\
