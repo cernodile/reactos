@@ -1,0 +1,72 @@
+/*
+ * PROJECT:     ReactOS Clipboard Viewer
+ * LICENSE:     GPL-2.0+ (https://spdx.org/licenses/GPL-2.0+)
+ * PURPOSE:     Estonian Language resource file
+ * TRANSLATOR:  Joann Mõndresku (joannmondresku at gmail dot com)
+ */
+
+LANGUAGE LANG_ESTONIAN, SUBLANG_DEFAULT
+
+ID_ACCEL ACCELERATORS
+BEGIN
+    VK_DELETE, CMD_DELETE, VIRTKEY
+END
+
+MAIN_MENU MENU
+BEGIN
+    POPUP "&Fail"
+    BEGIN
+        MENUITEM "&Ava...", CMD_OPEN
+        MENUITEM "Salvesta &Nimega...", CMD_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Välju", CMD_EXIT
+    END
+    POPUP "&Redigeeri"
+    BEGIN
+        MENUITEM "&Kustuta\tDel", CMD_DELETE
+    END
+    POPUP "&Kuva"
+    BEGIN
+        MENUITEM "&Automaatselt", CMD_AUTOMATIC
+    END
+    POPUP "&Spikker"
+    BEGIN
+        MENUITEM "&Spikriteemad", CMD_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Teave", CMD_ABOUT
+    END
+END
+
+STRINGTABLE
+BEGIN
+    STRING_CLIPBOARD "Lõikepuhvri vaataja"
+    STRING_CLIPFILE  "Lõikepuhvri element"
+    STRING_DELETE_MSG "Puhasta lõikepuhvri sisu?"
+    STRING_DELETE_TITLE "Puhasta lõikepuhver"
+    STRING_FORMAT_NT "ReactOSi lõikepuhvri failid (*.clp)"
+    STRING_FORMAT_GEN "Lõikepuhvri failid (*.clp)"
+END
+
+STRINGTABLE
+BEGIN
+    STRING_CF_UNKNOWN "Tundmatu formaat"
+    STRING_CF_TEXT "Tekst"
+    STRING_CF_BITMAP "Bitmap"
+    STRING_CF_OEMTEXT "OEM Tekst"
+    STRING_CF_UNICODETEXT "Unicode Tekst"
+    STRING_CF_DIB "DIB Bitmap"
+    STRING_CF_LOCALE "Lokaali andmed"
+    STRING_CF_ENHMETAFILE "Täiustatud metafail"
+    STRING_CF_METAFILEPICT "Metafail"
+    STRING_CF_PALETTE "Värvipalett"
+    STRING_CF_DIBV5 "DIB Bitmap (Versioon 5)"
+    STRING_CF_SYLK "Sümboolse lingi formaat"
+    STRING_CF_DIF "Andmevahetuse formaat"
+    STRING_CF_HDROP "Drop Data"
+END
+
+STRINGTABLE
+BEGIN
+    ERROR_UNSUPPORTED_FORMAT "Lõikepuhver sisaldab andmeid formaadis, mida ei saa kuvada."
+    ERROR_INVALID_FILE_FORMAT "Valitud fail ei ole kehtiv lõikepuhvri fail."
+END
